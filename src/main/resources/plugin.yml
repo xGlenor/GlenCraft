@@ -1,0 +1,4 @@
+name: GlenCore
+version: ${project.version}
+main: pl.glencraft.core.GlenCore
+api-version: 1.17
