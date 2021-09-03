@@ -1,0 +1,4 @@
+npc:
+  1:
+    - "RIGHT;CMD;PLAYER;/quests category building"
+    - "RIGHT;CMD;CONSOLE;bc siema console"

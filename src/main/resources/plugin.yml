@@ -2,3 +2,9 @@ name: GlenCore
 version: ${project.version}
 main: pl.glencraft.core.GlenCore
 api-version: 1.17
+commands:
+  glencore:
+    description: GlenCore plugin
+    permission: glencore.admin
+depend:
+  - Citizens
