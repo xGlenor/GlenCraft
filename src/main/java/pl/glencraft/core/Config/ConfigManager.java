@@ -1,7 +1,10 @@
 package pl.glencraft.core.Config;
 
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import pl.glencraft.core.GlenCore;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,5 +42,8 @@ public class ConfigManager {
         configurations.get(type).save();
     }
 
+    public FileConfiguration getFileConfiguration(File file) {
+        return YamlConfiguration.loadConfiguration(file);
+    }
 
 }

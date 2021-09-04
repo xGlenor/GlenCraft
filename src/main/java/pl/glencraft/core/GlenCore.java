@@ -22,15 +22,13 @@ public final class GlenCore extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-
-
-        checkDepends();
-        this.configManager = new ConfigManager();
-        this.configManager.loadConfigs();
-        getServer().getPluginManager().registerEvents(new NPCListener(), this);
-
         this.commandManager = new CommandManager();
 
+        this.configManager = new ConfigManager();
+        this.configManager.loadConfigs();
+
+        getServer().getPluginManager().registerEvents(new NPCListener(), this);
+        checkDepends();
     }
 
     @Override
